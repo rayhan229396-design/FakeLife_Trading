@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
-from core.market_structure import MarketStructure
-from core.liquidity import LiquidityEngine
-from core.order_block import OrderBlockDetector
-from core.fair_value_gap import FairValueGap
+
+# 'from core.market_structure import ...' এর বদলে সরাসরি import:
+from market_structure import MarketStructure
+from liquidity import LiquidityEngine
+from order_block import OrderBlockDetector
+from fair_value_gap import FairValueGap
 
 class FeatureEngine:
     @staticmethod
